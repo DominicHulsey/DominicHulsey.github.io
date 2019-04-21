@@ -1,29 +1,28 @@
 <template>
-  <div class="navbar" id="topheader" style="z-index:10000000000;">
-    <nav class="navbar navbar-expand-md sticky-top navbar-dark info-color">
-      <a class="navbar-brand" href="#">Dominic Hulsey</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+  <div class="navbar" id="topheader" style="width:100%">
+    <nav class=" navbar navbar-expand-sm sticky-top navbar-dark info-color">
+      <a class=" navbar-brand" href="#">Dominic Hulsey</a>
+      <button class="navbar-toggler ml-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+      <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto" style="width:100%">
           <li class="nav-item" :class="{ active: isActive == 'Home' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(1,2)">
-            <a @click="isActive = 'Home'" class="nav-link waves-effect waves-light" href="#">Home <span
-                class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item" :class="{ active: isActive == 'Portfolio' }"
-            @click="$parent.$children[0].$parent.$children[1].api.moveTo(2,2)">
-            <a @click="isActive = 'Portfolio'" class="nav-link waves-effect waves-light" href="#">Portfolio</a>
+            <a class="nav-link waves-effect waves-light" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item" :class="{ active: isActive == 'Skills' }"
+            @click="$parent.$children[0].$parent.$children[1].api.moveTo(2,2)">
+            <a class="nav-link waves-effect waves-light" href="#">Skills</a>
+          </li>
+          <li class="nav-item" :class="{ active: isActive == 'Portfolio' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(3,2)">
-            <a @click="isActive = 'Skills'" class="nav-link waves-effect waves-light" href="#">Skills</a>
+            <a class="nav-link waves-effect waves-light" href="#">Portfolio</a>
           </li>
           <li class="nav-item" :class="{ active: isActive == 'Contact' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(4,2)">
-            <a @click="isActive = 'Contact'" class="nav-link waves-effect waves-light" href="#">Contact</a>
+            <a class="nav-link waves-effect waves-light" href="#">Contact</a>
           </li>
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink"

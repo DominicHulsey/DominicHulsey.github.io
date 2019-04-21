@@ -6,13 +6,13 @@
         <home-page></home-page>
         <!-- <h3>Section 1</h3> -->
       </div>
-      <div class="section section2 bg-light">
+      <div class="section section2 bg-light" style="overflow: hidden;">
+        <h3>Section 2</h3>
+      </div>
+      <div class="section bg-light">
         <portfolio></portfolio>
       </div>
-      <div class="section">
-        <h3>Section 3</h3>
-      </div>
-      <div class="section">
+      <div class="section bg-light">
         <h3>Section 4</h3>
       </div>
     </full-page>
@@ -53,7 +53,7 @@
           bigSectionsDestination: 'top',
           afterLoad: this.afterLoad,
           navigation: true,
-          anchors: ['page1', 'page2', 'page3', 'page4'],
+          anchors: ['Home', 'Skills', 'Portfolio', 'Contact'],
           // sectionsColor: ['#41b883', '#ff5f45', '#0798ec', '#fec401', '#1bcee6', '#ee1a59', '#2c3e4f', '#ba5be9', '#b4b8ab']
         },
       }
@@ -67,8 +67,7 @@
     },
     methods: {
       afterLoad: function (origin, destination, direction) {
-        console.log('page')
-        this.$store.dispatch("setActive", destination)
+        this.$store.dispatch("setActive", destination.anchor)
       },
       addSection: function (e) {
         var newSectionNumber = document.querySelectorAll('.fp-section').length + 1

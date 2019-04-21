@@ -1,10 +1,6 @@
 <template>
   <div class="Homepage home">
     <div class="overlay justify-content-center">
-      <!-- <div>
-        <button @click="$parent.api.moveSectionDown()" class="homeBG btn btn-outline-primary py-3 px-4">View
-          my work <i class="ml-2 fas fa-arrow-right arHover"></i></button>
-      </div> -->
       <div>
         <button @click="$parent.api.moveSectionDown()" class="homeButton btn btn-outline-primary py-3 px-4">View
           my work <i class="ml-2 fas fa-arrow-right arHover"></i></button>
