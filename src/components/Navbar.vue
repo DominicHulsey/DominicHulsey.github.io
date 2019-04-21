@@ -49,10 +49,13 @@
     },
     data() {
       return {
-        isActive: "Home"
       }
     },
-    computed: {},
+    computed: {
+      isActive() {
+        return this.$store.state.isActive
+      }
+    },
     methods: {},
     components: {}
   }

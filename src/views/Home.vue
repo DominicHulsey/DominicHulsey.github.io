@@ -6,8 +6,8 @@
         <home-page></home-page>
         <!-- <h3>Section 1</h3> -->
       </div>
-      <div class="section section2">
-        Section 2
+      <div class="section section2 bg-light">
+        <portfolio></portfolio>
       </div>
       <div class="section">
         <h3>Section 3</h3>
@@ -42,6 +42,7 @@
   import Navbar from "@/components/Navbar.vue"
   import HomePage from "@/components/HomePage.vue"
   import Parallax from "vue-parallaxy"
+  import Portfolio from "@/components/Portfolio.vue"
   export default {
     mounted() {
     },
@@ -53,7 +54,7 @@
           afterLoad: this.afterLoad,
           navigation: true,
           anchors: ['page1', 'page2', 'page3', 'page4'],
-          sectionsColor: ['#41b883', '#ff5f45', '#0798ec', '#fec401', '#1bcee6', '#ee1a59', '#2c3e4f', '#ba5be9', '#b4b8ab']
+          // sectionsColor: ['#41b883', '#ff5f45', '#0798ec', '#fec401', '#1bcee6', '#ee1a59', '#2c3e4f', '#ba5be9', '#b4b8ab']
         },
       }
     },
@@ -61,12 +62,13 @@
       HelloWorld,
       Navbar,
       HomePage,
-      Parallax
+      Parallax,
+      Portfolio
     },
     methods: {
       afterLoad: function (origin, destination, direction) {
-        // console.log("After load....");
-        // console.log(destination);
+        console.log('page')
+        this.$store.dispatch("setActive", destination)
       },
       addSection: function (e) {
         var newSectionNumber = document.querySelectorAll('.fp-section').length + 1
