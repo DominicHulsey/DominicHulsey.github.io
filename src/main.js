@@ -10,7 +10,6 @@ import Parallax from "vue-parallaxy";
 
 // @ts-ignore
 Vue.use(VueFullPage);
-
 Vue.config.productionTip = false
 
 

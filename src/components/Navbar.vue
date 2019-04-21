@@ -1,20 +1,20 @@
 <template>
   <div class="navbar" id="topheader" style="width:100%">
     <nav class=" navbar navbar-expand-sm sticky-top navbar-dark info-color">
-      <a class=" navbar-brand" href="#">Dominic Hulsey</a>
+      <a class=" bg-dark navbar-brand" href="#">Dominic Hulsey</a>
       <button class="navbar-toggler ml-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse bg-light" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto" style="width:100%">
           <li class="nav-item" :class="{ active: isActive == 'Home' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(1,2)">
             <a class="nav-link waves-effect waves-light" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item" :class="{ active: isActive == 'Skills' }"
+          <li class="nav-item" :class="{ active: isActive == 'AboutMe' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(2,2)">
-            <a class="nav-link waves-effect waves-light" href="#">Skills</a>
+            <a class="nav-link waves-effect waves-light" href="#">About Me</a>
           </li>
           <li class="nav-item" :class="{ active: isActive == 'Portfolio' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(3,2)">
@@ -43,9 +43,6 @@
 <script>
   export default {
     name: 'navbar',
-    mounted() {
-      console.log(this.$parent.$children[0].$parent.$children[1])
-    },
     data() {
       return {
       }

@@ -6,8 +6,8 @@
         <home-page></home-page>
         <!-- <h3>Section 1</h3> -->
       </div>
-      <div class="section section2 bg-light" style="overflow: hidden;">
-        <h3>Section 2</h3>
+      <div class="section section2 bg-light">
+        <about-me></about-me>
       </div>
       <div class="section bg-light">
         <portfolio></portfolio>
@@ -17,7 +17,7 @@
       </div>
     </full-page>
 
-    <ul class="actions">
+    <!-- <ul class="actions">
       <li @click="$refs.fullpage.api.moveSectionDown()" class="actions-button">Down</li>
       <li @click="$refs.fullpage.api.moveSectionUp()" class="actions-button">Up</li>
       <li @click="$refs.fullpage.api.moveTo(3,2)" class="actions-button">MoveTo</li>
@@ -31,7 +31,7 @@
       <li @click="$refs.fullpage.api.setScrollingSpeed(4000)" class="actions-button">setScrollingSpeed</li>
       <li @click="addSection()" class="actions-button">Add section</li>
       <li @click="removeSection()" class="actions-button">Remove section</li>
-    </ul>
+    </ul> -->
   </div>
 
 </template>
@@ -43,17 +43,21 @@
   import HomePage from "@/components/HomePage.vue"
   import Parallax from "vue-parallaxy"
   import Portfolio from "@/components/Portfolio.vue"
+  import AboutMe from "@/components/AboutMe.vue"
   export default {
     mounted() {
     },
     name: 'home',
+    mounted() {
+    },
     data() {
       return {
         options: {
+          licenseKey: 13134234,
           bigSectionsDestination: 'top',
           afterLoad: this.afterLoad,
           navigation: true,
-          anchors: ['Home', 'Skills', 'Portfolio', 'Contact'],
+          anchors: ['Home', 'AboutMe', 'Portfolio', 'Contact'],
           // sectionsColor: ['#41b883', '#ff5f45', '#0798ec', '#fec401', '#1bcee6', '#ee1a59', '#2c3e4f', '#ba5be9', '#b4b8ab']
         },
       }
@@ -63,7 +67,8 @@
       Navbar,
       HomePage,
       Parallax,
-      Portfolio
+      Portfolio,
+      AboutMe
     },
     methods: {
       afterLoad: function (origin, destination, direction) {
