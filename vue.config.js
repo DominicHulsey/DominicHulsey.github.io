@@ -1,6 +1,6 @@
 module.exports = {
-  publicPath: '/landingpage/',
-  outputDir: undefined,
+  publicPath: undefined,
+  outputDir: 'docs',
   assetsDir: undefined,
   runtimeCompiler: undefined,
   productionSourceMap: undefined,
