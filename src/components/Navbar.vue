@@ -1,7 +1,7 @@
 <template>
   <div class="navbar" id="topheader" style="width:100%">
     <nav class=" navbar navbar-expand-sm sticky-top navbar-dark info-color">
-      <a class=" bg-dark navbar-brand" href="#">Dominic Hulsey</a>
+      <a class="textC px-2 text-dark backC navbar-brand" href="#">Dominic Hulsey</a>
       <button class="navbar-toggler ml-5" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -10,19 +10,19 @@
         <ul class="navbar-nav mr-auto" style="width:100%">
           <li class="nav-item" :class="{ active: isActive == 'Home' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(1,2)">
-            <a class="nav-link waves-effect waves-light" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="textC nav-link waves-effect waves-light" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item" :class="{ active: isActive == 'AboutMe' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(2,2)">
-            <a class="nav-link waves-effect waves-light" href="#">About Me</a>
+            <a class="textC nav-link waves-effect waves-light" href="#">About Me</a>
           </li>
           <li class="nav-item" :class="{ active: isActive == 'Portfolio' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(3,2)">
-            <a class="nav-link waves-effect waves-light" href="#">Portfolio</a>
+            <a class="textC nav-link waves-effect waves-light" href="#">Portfolio</a>
           </li>
           <li class="nav-item" :class="{ active: isActive == 'Contact' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(4,2)">
-            <a class="nav-link waves-effect waves-light" href="#">Contact</a>
+            <a class="textC nav-link waves-effect waves-light" href="#">Contact</a>
           </li>
           <!-- <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenuLink"
@@ -57,6 +57,15 @@
   }
 </script>
 
+<style>
+  .textC {
+    color: #cba86c;
+  }
+
+  .backC {
+    background-color: #cba86c;
+  }
+</style>
 
 <style scoped>
   .navbar {
@@ -65,22 +74,22 @@
 
   #topheader .navbar-nav li>a {
     text-transform: capitalize;
-    color: #333;
+    color: #cba86c;
     transition: background-color .2s, color .2s;
   }
 
   #topheader .navbar-nav li>a:hover {
-    background-color: #333;
+    background-color: #cba86c;
     color: #fff;
   }
 
   #topheader .navbar-nav li>a:active {
-    background-color: #333;
+    background-color: #cba86c;
     color: #fff;
   }
 
   #topheader .navbar-nav li.active>a {
-    background-color: #333;
+    background-color: #cba86c;
     color: #fff;
   }
 </style>

@@ -3,12 +3,11 @@
     <div class="row">
       <div class="col-6 d-flex align-items-center justify-content-center" style="height: 100vh;">
         <transition name="slide" enter-active-class="slideInLeft" leave-active-class="gone">
-          <div v-if="setActive=='AboutMe'">
-            <img class=" img-fluid circle" src="../assets/selfie.jpg" style="align-self: center;border-radius:5%;" />
-            <div class="card">
-              <div class="card-body">
-                <p>Hi! I'm a software developer with a passion for engaging applications.</p>
-              </div>
+          <div class="card bg-transparent" v-if="setActive=='AboutMe'">
+            <img class="card-img-top img-fluid circle" src="../assets/selfie.jpg"
+              style="align-self: center;border-radius:5%;" />
+            <div class="card-body rounded mt-2 bg-light">
+              <p>Hi! I'm Dominic Hulsey, I build full-stack applications.</p>
             </div>
           </div>
         </transition>
@@ -16,14 +15,14 @@
       <div class="col-5" style="height:100vh;">
         <transition name="card" mode="out-in">
           <div class="row d-flex align-items-center justify-content-center" v-if="front == false" style="height:100vh;">
-            <div class="card">
+            <div class="card bg-light">
               <div class="card-title d-flex justify-content-center">
-                <h1 class="mt-4 py-3 text-white bg-dark" style="font-size:24px;font-weight:bold;width:40%">
+                <h1 class="mt-4 py-3 text-dark backC" style="font-size:24px;font-weight:bold;width:40%">
                   Technologies:
                 </h1>
               </div>
-              <hr>
-              <div class="row m-4 justify-content-center">
+              <hr class="bg-transparent">
+              <div class="row m-4 bg-light justify-content-center">
                 <div class="col-3">
                   <img src="../assets/html.png" class="img-fluid">
                 </div>
@@ -82,7 +81,7 @@
       },
       active() {
         if (this.$store.state.isActive == "AboutMe") {
-          front = true;
+          this.front = true;
         }
       }
     },
@@ -93,13 +92,13 @@
 
 
 <style scoped>
-  .card {
-    transition: all 10s ease-in;
+  .backC {
+    background-color: #cba86c;
   }
 
   .circle {
     max-width: 400px;
-    border: 5px solid black;
+    border: 3px solid rgb(227, 227, 227);
   }
 
   .card-enter,
@@ -122,5 +121,9 @@
 
   .element {
     max-width: 75px
+  }
+
+  .backG {
+    background-color: rgba(211, 211, 211, 0.776);
   }
 </style>

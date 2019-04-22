@@ -6,22 +6,126 @@
         <home-page></home-page>
         <!-- <h3>Section 1</h3> -->
       </div>
-      <div class="section section2 bg-light">
+      <div class="section section2 bg-dark">
         <about-me></about-me>
       </div>
-      <div class="section bg-light">
-        <portfolio></portfolio>
+      <div class="section">
+        <div class="slide bg-dark" id="slide1">
+          <div class="row justify-content-center h-100 align-items-center">
+            <div class="col-lg-4 col-md-6 col-sm-10 col-10 justify-content-center p-3" style="border:3px solid white;">
+              <div class="col-12">
+                <div class="row h-100 align-items-center justify-content-center">
+                  <div class="col-4">
+                    <img class="card-img-top img-fluid" src="../assets/keepr.png" />
+                  </div>
+                  <div class="col-8 align-items-center">
+                    <p class="card-title text-white" style="font-weight:bolder; font-size:4em;">Keepr</p>
+                  </div>
+                </div>
+                <hr class="bg-white">
+                <div class="row">
+                  <p class="text-white text-left">Beautiful photo sharing app built using Vue.js on the front-end and
+                    C#/SQL on
+                    the backend. Make a
+                    Keep, then add it to one of your vaults!</p>
+                  <hr>
+                  <p class="text-white">Source code: <a
+                      href="https://github.com/DominicHulsey/keepr">https://github.com/DominicHulsey/keepr</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-7 col-sm-10 col-10 p-3 justify-content-center align-items-center">
+              <div class="card h-100">
+                <img class="img-fluid" href="https://github.com/DominicHulsey/keepr" src="../assets/Keepr.gif"
+                  style="border:3px solid white;" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide bg-dark" id="slide2">
+          <div class="row justify-content-center h-100 align-items-center">
+            <div class="col-lg-4 col-md-6 col-sm-10 col-10 justify-content-center p-3" style="border:3px solid white;">
+              <div class="col-12">
+                <div class="row h-100 align-items-center justify-content-center">
+                  <div class="col-12">
+                    <p class="text-white" style="font-size:3em">Chalkboard</p>
+                  </div>
+                </div>
+                <hr class="bg-white">
+                <div class="row">
+                  <p class="text-white text-left">Beautiful photo sharing app built using Vue.js on the front-end and
+                    C#/SQL on
+                    the backend. Make a
+                    Keep, then add it to one of your vaults!</p>
+                  <hr>
+                  <p class="text-white">Source code: <a
+                      href="chalkboard-kanban.herokuapp.com">chalkboard-kanban.herokuapp.com</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-7 col-sm-10 col-10 p-3 justify-content-center align-items-center">
+              <div class=" h-100">
+                <img class="img-fluid" href="https://github.com/DominicHulsey/im-boardr" src="../assets/Chalkboard.gif"
+                  style="border:3px solid white;" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slide bg-dark" id="slide3">
+          <div class="row justify-content-center h-100 align-items-center">
+            <div class=" col-lg-4 col-md-6 col-sm-10 col-10 justify-content-center p-3" style="border:3px solid white;">
+              <div class="col-12">
+                <div class="row h-100 align-items-center justify-content-center">
+                  <h3 class="card-title text-white" style="font-size:3em;">Poplar</h3>
+                </div>
+                <hr class="bg-white">
+                <div class="row">
+                  <p class="text-white text-left">Beautiful photo sharing app built using Vue.js on the front-end and
+                    C#/SQL on
+                    the backend. Make a
+                    Keep, then add it to one of your vaults!</p>
+                  <hr>
+                  <p class="text-white">Source code: <a
+                      href="https://github.com/DominicHulsey/poplar">https://github.com/DominicHulsey/poplar</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-7 col-sm-10 col-10 p-3 justify-content-center align-items-center">
+              <img class="img-fluid poplar card-img-top" src="../assets/Poplar.png" style="border:3px solid white;" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="section bg-light">
-        <h3>Section 4</h3>
+      <div class="section bg-dark">
+        <h3> Contact:</h3>
+        <hr class="bg-white" style="width:50vw;">
+        <p class="text-white pb-2">Have a question or want to work together?</p>
+        <form action="https://formspree.io/dominic.hulsey.dh@gmail.com" method="POST">
+          <div class="col-8 offset-2 justify-content-center">
+            <div class="row justify-content-center">
+              <input class="form-control" type="text" name="name" placeholder="Name" style="min-width:200px" />
+            </div>
+            <div class="row mb-2 justify-content-center">
+              <input class="form-control" type="text" name="_replyto" placeholder="Your email"
+                style="min-width:200px" />
+            </div>
+            <div class="row justify-content-center">
+              <textarea rows="7" name="description" placeholder="Message"
+                style="min-width:200px; padding:12px 20px;"></textarea>
+            </div>
+            <button class="btn backC noRND mt-3" type="btnsubmit">Submit</button>
+          </div>
+        </form>
       </div>
     </full-page>
 
-    <!-- <ul class="actions">
-      <li @click="$refs.fullpage.api.moveSectionDown()" class="actions-button">Down</li>
-      <li @click="$refs.fullpage.api.moveSectionUp()" class="actions-button">Up</li>
-      <li @click="$refs.fullpage.api.moveTo(3,2)" class="actions-button">MoveTo</li>
-      <li @click="$refs.fullpage.api.silentMoveTo(2,2)" class="actions-button">Silent Move</li>
+    <ul class="actions">
+      <!-- <li @click="$refs.fullpage.api.moveSectionDown()" class="actions-button">Down</li>
+      <li @click="$refs.fullpage.api.moveSectionUp()" class="actions-button">Up</li> -->
+      <!-- <li @click="$refs.fullpage.api.moveTo(3,0)" class="actions-button">MoveTo</li> -->
+      <!-- <li @click="$refs.fullpage.api.silentMoveTo(2,2)" class="actions-button">Silent Move</li>
       <li @click="$refs.fullpage.api.moveSlideRight()" class="actions-button">Move right</li>
       <li @click="$refs.fullpage.api.moveSlideLeft()" class="actions-button">Move lef</li>
       <li @click="$refs.fullpage.api.setAutoScrolling(false)" class="actions-button">Set autoScroll</li>
@@ -30,8 +134,8 @@
       <li @click="$refs.fullpage.api.setKeyboardScrolling(false)" class="actions-button">Set keyboardScroll</li>
       <li @click="$refs.fullpage.api.setScrollingSpeed(4000)" class="actions-button">setScrollingSpeed</li>
       <li @click="addSection()" class="actions-button">Add section</li>
-      <li @click="removeSection()" class="actions-button">Remove section</li>
-    </ul> -->
+      <li @click="removeSection()" class="actions-button">Remove section</li> -->
+    </ul>
   </div>
 
 </template>
@@ -56,8 +160,11 @@
           licenseKey: 13134234,
           bigSectionsDestination: 'top',
           afterLoad: this.afterLoad,
-          navigation: true,
-          anchors: ['Home', 'AboutMe', 'Portfolio', 'Contact'],
+          navigation: false,
+          scrollHorizontally: false,
+          slidesNavigation: true,
+          FitToSection: true,
+          anchors: ['Home', 'AboutMe', 'Portfolio', 'Contact', 'slide1', 'slide2', 'slide3'],
           // sectionsColor: ['#41b883', '#ff5f45', '#0798ec', '#fec401', '#1bcee6', '#ee1a59', '#2c3e4f', '#ba5be9', '#b4b8ab']
         },
       }
@@ -120,6 +227,55 @@
 </script>
 
 <style>
+  .noRND {
+    border-radius: 0;
+  }
+
+  .backC {
+    background-color: #cba86c;
+  }
+
+  input[type=text],
+  select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=submit] {
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+  .poplar {
+    max-width: 300px;
+    height: auto;
+  }
+
   .BG {
     background-image: URL("@/assets/BG.jpg");
     z-index: 100;
@@ -185,6 +341,8 @@
     font-weight: normal;
     font-style: normal;
   }
+
+
 
   strong {
     font-weight: bold;

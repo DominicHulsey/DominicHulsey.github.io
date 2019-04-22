@@ -1,7 +1,10 @@
 <template>
   <div class="Homepage home">
     <div class="overlay justify-content-center">
-      <div>
+      <div style="margin-bottom:20%;">
+        <p class="text-white mb-5" style="font-size:3em;font-weight: bold;">Hi! I'm <span class="textC">Dominic
+            Hulsey</span>. I'm a
+          Full-Stack Software Developer</p>
         <button @click="$parent.api.moveSectionDown()" class="homeButton btn btn-outline-primary py-3 px-4">View
           my work <i class="ml-2 fas fa-arrow-right arHover"></i></button>
       </div>
@@ -97,7 +100,7 @@
   .overlay {
     align-items: center;
     display: flex;
-    background-color: rgba(77, 77, 77, 0.283);
+    background-color: rgba(52, 52, 52, 0.283);
     height: 100vh;
     width: 100vw;
     z-index: 10;
@@ -132,7 +135,7 @@
   }
 
   .homeButton:hover {
-    background-color: rgba(108, 108, 254, 0.735);
+    background-color: #8f7e81c4;
     align-items: center;
   }
 
