@@ -16,9 +16,13 @@
 
 <script>
   import Parallax from "vue-parallaxy";
+  import ResizeText from 'vue-resize-text'
   export default {
     name: 'Homepage',
     mounted() {
+    },
+    directives: {
+      ResizeText
     },
     data() {
       return {
