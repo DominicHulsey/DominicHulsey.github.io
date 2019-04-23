@@ -6,7 +6,10 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 import VueFullPage from 'vue-fullpage.js'
-import Parallax from "vue-parallaxy";
+import VueResizeText from 'vue-resize-text';
+
+// @ts-ignore
+Vue.use(VueResizeText)
 
 // @ts-ignore
 Vue.use(VueFullPage);

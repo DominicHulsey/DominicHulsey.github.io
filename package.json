@@ -12,6 +12,7 @@
     "vue-flip": "^0.2.5",
     "vue-fullpage.js": "^0.1.3",
     "vue-parallaxy": "^1.1.1",
+    "vue-resize-text": "^0.1.0",
     "vue-router": "^3.0.3",
     "vue2-animate": "^2.1.0",
     "vuex": "^3.0.1"

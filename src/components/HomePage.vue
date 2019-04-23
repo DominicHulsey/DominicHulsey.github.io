@@ -2,10 +2,11 @@
   <div class="Homepage home">
     <div class="overlay justify-content-center">
       <div style="margin-bottom:20%;">
-        <p class="text-white mb-5" style="font-size:3em;font-weight: bold;">Hi! I'm <span class="textC">Dominic
+        <p v-resize-text="{ratio:1.3, minFontSize: '30px', maxFontSize: '50px', delay: 200}" class="text-white mb-4"
+          style="font-weight: bold;">Hi! I'm <span class="textC">Dominic
             Hulsey</span>. I'm a
           Full-Stack Software Developer</p>
-        <button @click="$parent.api.moveSectionDown()" class="homeButton btn btn-outline-primary py-3 px-4">View
+        <button @click="$parent.api.moveSectionDown()" class="homeButton mt-5 btn btn-outline-primary py-3 px-4">View
           my work <i class="ml-2 fas fa-arrow-right arHover"></i></button>
       </div>
     </div>

@@ -8,19 +8,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto" style="width:100%">
-          <li class="nav-item" :class="{ active: isActive == 'Home' }"
+          <li class="nav-item mx-2" :class="{ active: isActive == 'Home' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(1,2)">
             <a class="textC nav-link waves-effect waves-light" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item" :class="{ active: isActive == 'AboutMe' }"
+          <li class="nav-item mx-2" :class="{ active: isActive == 'AboutMe' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(2,2)">
             <a class="textC nav-link waves-effect waves-light" href="#">About Me</a>
           </li>
-          <li class="nav-item" :class="{ active: isActive == 'Portfolio' }"
+          <li class="nav-item mx-2" :class="{ active: isActive == 'Portfolio' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(3,2)">
             <a class="textC nav-link waves-effect waves-light" href="#">Portfolio</a>
           </li>
-          <li class="nav-item" :class="{ active: isActive == 'Contact' }"
+          <li class="nav-item mx-2" :class="{ active: isActive == 'Contact' }"
             @click="$parent.$children[0].$parent.$children[1].api.moveTo(4,2)">
             <a class="textC nav-link waves-effect waves-light" href="#">Contact</a>
           </li>
@@ -74,22 +74,36 @@
 
   #topheader .navbar-nav li>a {
     text-transform: capitalize;
-    color: #cba86c;
-    transition: background-color .2s, color .2s;
+    color: rgb(176, 176, 176);
+    position: relative;
   }
 
-  #topheader .navbar-nav li>a:hover {
+  #topheader .navbar-nav li>a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
     background-color: #cba86c;
-    color: #fff;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
   }
 
-  #topheader .navbar-nav li>a:active {
-    background-color: #cba86c;
-    color: #fff;
+  #topheader .navbar-nav li:hover a::before {
+    visibility: visible;
+    transform: scaleX(1);
   }
+
+  /* #topheader .navbar-nav li:active {
+    border-bottom: 3px solid #cba86c;
+  } */
 
   #topheader .navbar-nav li.active>a {
-    background-color: #cba86c;
-    color: #fff;
+    visibility: visible;
+    color: white;
+    font-weight: bolder;
+    transform: scale(1.1)
   }
 </style>
