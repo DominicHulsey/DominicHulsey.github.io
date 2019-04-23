@@ -88,17 +88,13 @@
     background-color: #cba86c;
     visibility: hidden;
     transform: scaleX(0);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.25s ease-in-out;
   }
 
   #topheader .navbar-nav li:hover a::before {
     visibility: visible;
     transform: scaleX(1);
   }
-
-  /* #topheader .navbar-nav li:active {
-    border-bottom: 3px solid #cba86c;
-  } */
 
   #topheader .navbar-nav li.active>a {
     visibility: visible;
