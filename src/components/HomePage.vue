@@ -3,7 +3,7 @@
     <div class="overlay justify-content-center">
       <div style="margin-bottom:20%;">
         <p v-resize-text="{ratio:1.3, maxFontSize: '50px', delay: 100}" class="text-white mb-4"
-          style="font-weight: bold;">
+          style="font-weight: bold;text-shadow: 1px 1px rgb(48, 48, 48);">
           Hi! I'm <span class="textC">Dominic
             Hulsey</span>. I'm a
           Full-Stack Software Developer</p>
@@ -16,7 +16,6 @@
 
 
 <script>
-  import Parallax from "vue-parallaxy";
   import ResizeText from 'vue-resize-text'
   export default {
     name: 'Homepage',
@@ -84,9 +83,6 @@
         lastItem.parentNode.removeChild(lastItem)
       },
     },
-    components: {
-      Parallax
-    }
   }
 </script>
 
