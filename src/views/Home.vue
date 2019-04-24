@@ -29,8 +29,10 @@
                     the backend. Make a
                     Keep, then add it to one of your vaults!</p>
                   <hr>
+                  <p class="text-white">Deployed app: <a href="keeprapp.herokuapp.com">keeprapp.herokuapp.com</a>
+                  </p>
                   <p class="text-white">Source code: <a
-                      href="https://github.com/DominicHulsey/keepr">https://github.com/DominicHulsey/keepr</a></p>
+                      href="github.com/DominicHulsey/keepr">github.com/DominicHulsey/keepr</a></p>
                 </div>
               </div>
             </div>
@@ -53,13 +55,15 @@
                 </div>
                 <hr class="bg-white">
                 <div class="row">
-                  <p class="text-white text-left">Beautiful photo sharing app built using Vue.js on the front-end and
-                    C#/SQL on
-                    the backend. Make a
-                    Keep, then add it to one of your vaults!</p>
+                  <p class="text-white text-left">Chalkboard-themed task management app. Organize your tasks into lists,
+                    then add those lists to one of your boards. Work smarter, not harder! Made with Vue.js on the
+                    front-end, Node.js on the back-end, and a MongoDB database.</p>
                   <hr>
-                  <p class="text-white">Source code: <a
+                  <p class="text-white">Deployed site: <a
                       href="chalkboard-kanban.herokuapp.com">chalkboard-kanban.herokuapp.com</a>
+                  </p>
+                  <p class="text-white">Source code: <a
+                      href="https://github.com/SeancMaginnis/im-boardr">https://github.com/SeancMaginnis/im-boardr</a>
                   </p>
                 </div>
               </div>
@@ -81,10 +85,9 @@
                 </div>
                 <hr class="bg-white">
                 <div class="row">
-                  <p class="text-white text-left">Beautiful photo sharing app built using Vue.js on the front-end and
-                    C#/SQL on
-                    the backend. Make a
-                    Keep, then add it to one of your vaults!</p>
+                  <p class="text-white text-left">Tinder-style application where you post either one or two photos and a
+                    question, then let people vote on their choice! Made using Vue.js on the front-end, Node.js on
+                    the back-end, and a MongoDB database.</p>
                   <hr>
                   <p class="text-white">Source code: <a
                       href="https://github.com/DominicHulsey/poplar">https://github.com/DominicHulsey/poplar</a>
