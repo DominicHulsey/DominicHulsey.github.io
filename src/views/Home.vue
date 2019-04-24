@@ -54,15 +54,15 @@
                   </div>
                 </div>
                 <hr class="bg-white">
-                <div class="row">
+                <div class="row d-flex flex-column">
                   <p class="text-white text-left">Chalkboard-themed task management app. Organize your tasks into lists,
                     then add those lists to one of your boards. Work smarter, not harder! Made with Vue.js on the
                     front-end, Node.js on the back-end, and a MongoDB database.</p>
-                  <hr>
-                  <p class="text-white">Deployed site: <a
+                  <br>
+                  <p class="text-white" style="text-align: left !important;">Deployed site: <a
                       href="chalkboard-kanban.herokuapp.com">chalkboard-kanban.herokuapp.com</a>
                   </p>
-                  <p class="text-white">Source code: <a
+                  <p class="text-white text-left">Source code: <a
                       href="https://github.com/SeancMaginnis/im-boardr">https://github.com/SeancMaginnis/im-boardr</a>
                   </p>
                 </div>
@@ -89,7 +89,7 @@
                     question, then let people vote on their choice! Made using Vue.js on the front-end, Node.js on
                     the back-end, and a MongoDB database.</p>
                   <hr>
-                  <p class="text-white">Source code: <a
+                  <p class="text-white text-left">Source code: <a
                       href="https://github.com/DominicHulsey/poplar">https://github.com/DominicHulsey/poplar</a>
                   </p>
                 </div>
