@@ -27,7 +27,8 @@
                   <p class="text-white text-left">Beautiful photo sharing app built using Vue.js on the front-end and
                     C#/SQL on
                     the backend. Make a
-                    Keep, then add it to one of your vaults!</p>
+                    Keep, then add it to one of your vaults!
+                  </p>
                   <hr>
                   <p class="text-white">Deployed app: <a href="keeprapp.herokuapp.com">keeprapp.herokuapp.com</a>
                   </p>
